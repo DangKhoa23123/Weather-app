@@ -11,7 +11,6 @@
     android:background="@drawable/gradient_bg">
 
     <RelativeLayout
-        android:id="@+id/mainContainer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="visible">
@@ -22,6 +21,9 @@
             android:orientation="vertical"
             android:layout_marginTop="10dp"
             android:gravity="center_horizontal">
+
+
+
             <TextView
                 android:id="@+id/address"
                 android:layout_width="wrap_content"
@@ -54,7 +56,8 @@
                 android:layout_height="wrap_content"
                 android:textSize="18dp"
                 android:layout_gravity="center"
-                android:text="Clear Sky"/>
+                android:text="Clear Sky"
+                android:textColor="#FFFFFF"/>
             <TextView
                 android:id="@+id/temp"
                 android:layout_width="wrap_content"
@@ -78,9 +81,9 @@
                     android:layout_height="wrap_content"
                     android:text="Min Temp: 25°C"
                     android:textColor="#FFFFFF"
-                    android:textSize="16sp" />
+                    android:textSize="13sp" />
                 <Space
-                    android:layout_width="120dp"
+                    android:layout_width="12dp"
                     android:layout_height="wrap_content"/>
                 <TextView
                     android:id="@+id/temp_max"
@@ -88,13 +91,14 @@
                     android:layout_height="wrap_content"
                     android:text="Max Temp: 34°C"
                     android:textColor="#FFFFFF"
-                    android:textSize="16sp"/>
+                    android:textSize="13sp"/>
             </LinearLayout>
 
         </LinearLayout>
 
 
         <GridLayout
+            android:id="@+id/mainContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
@@ -219,6 +223,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/dateButton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
@@ -226,16 +231,16 @@
                 android:gravity="center">
 
                 <ImageView
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
-                    android:src="@drawable/info"
-                    android:contentDescription="info Icon"/>
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/date"
+                    android:contentDescription="date Icon"/>
 
                 <TextView
                     android:id="@+id/about"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Created by\nEvan"
+                    android:text="Xem lịch"
                     android:textAlignment="center"
                     android:textColor="#FFFFFF"
                     android:textSize="14sp" />
